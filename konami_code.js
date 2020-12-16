@@ -11,24 +11,21 @@ const codes = [
   "a"
 ];
 
-document.addEventListener('keydown', function(e) {
-  init(e)
-});
 
-var index = 0
-
-function init(e) {
-  // your code here
-  var key = e.key
-  if (key === codes[index]) {
-    console.log("Key logged:" + key)
-    ++index
-    if (index === codes.length) {
-      alert("Great Job!!! You found the EasterEgg!")
+function init() {
+  var index = 0
+  document.body.addEventListener('keydown', function(e) {
+    var key = e.key
+    if (key === codes[index]) {
+      console.log("Key logged:" + key)
+      ++index
+      if (index === codes.length) {
+        alert("Great Job!!! You found the EasterEgg!")
+      }
+    } else {
+      index = 0
     }
-  } else {
-    index = 0
-  }
+  });
 }
 
 
