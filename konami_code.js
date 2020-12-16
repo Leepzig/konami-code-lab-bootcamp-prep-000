@@ -34,7 +34,7 @@ function init(e) {
 
 
 /*
-TODO
+
 
 ArrowUp key initiates listening /comparing other keys
 if keys continue to match keep liste/compare
