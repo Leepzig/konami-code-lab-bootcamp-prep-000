@@ -20,7 +20,7 @@ function init() {
       console.log("Key logged:" + key)
       ++index
       if (index === codes.length) {
-        alert("Great Job!!! You found the EasterEgg!")
+        alert("Hurray!!! You found the EasterEgg!")
       }
     } else {
       index = 0
